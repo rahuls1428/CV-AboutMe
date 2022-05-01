@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input/Output Form ;)</title>
+  </head>
+  <body>
+    <h1>Contact Form -- h1 tag</h1>
+    <h3>Want to get in touch with us? -- h3 tag</h3>
+    <p>Please fill out this form below. -- p tag</p>
+    <!--note "textarea" element desrcibes box size, you can increase or decrease
+        size but dragging the 3 slanting lines in bottom right corner of box-->
+
+    <!-- "action" defines what will be done when u fit submit button-->
+    <!-- have to define method as well-->
+    <!-- add name="" attribute to each element so the text will be displayed in email,
+         if not added text wont be displayed in email
+        name attributes, identifies the data in the inputs -->
+    <form action="mailto:magicmagus14@gmail.com" method="post">
+      <label>Your Name: </label>
+      <input type="text" name="your_name" /> <br />
+      <label>Your email: </label>
+      <input type="email" name="your_email" /> <br />
+      <label>Your Message: </label> <br />
+      <textarea name="plaintext" cols="30" rows="10"></textarea> <br />
+      <input type="submit" />
+    </form>
+    <hr />
+    <p>
+      when u press submit here, because we added encoding type for form, you
+      wont get anay funny characters in mail application like above
+    </p>
+    <form
+      action="mailto:rahuls1428@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label>Your Name: </label>
+      <input type="text" name="your_name" /> <br />
+      <label>Your email: </label>
+      <input type="email" name="your_email" /> <br />
+      <label>Your Message: </label> <br />
+      <textarea name="yourMessage" cols="30" rows="10"></textarea> <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
